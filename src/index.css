@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+
+.app-bg {
+  background:
+    radial-gradient(1200px 600px at 100% -10%, rgba(124,77,255,.08), transparent 60%),
+    radial-gradient(800px 400px at -10% 110%, rgba(244,143,177,.12), transparent 55%),
+    linear-gradient(180deg, #faf5ff 0%, #fff7fb 60%, #fff9f0 100%);
+}
+
+
+.h-fluid { 
+  font-size: clamp(1.6rem, 2vw + 1rem, 2.25rem); 
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.08);
+  border: 1px solid rgba(0,0,0,.05);
+}
+
+.btn {
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: .5rem;
+  border-radius: 1rem; 
+  padding: .75rem 1rem; 
+  font-weight: 600;
+  transition: transform .08s ease, filter .2s ease;
+}
+.btn:active { 
+  transform: scale(.97); 
+}
+.btn-primary { 
+  background:#7c3aed; 
+  color:#fff; 
+  filter: drop-shadow(0 2px 4px rgba(124,58,237,.3)); 
+}
+.btn-primary:hover { 
+  filter: brightness(1.05) drop-shadow(0 6px 16px rgba(124,58,237,.25)); 
+}
+
+.input {
+  width: 100%; 
+  border-radius: .75rem; 
+  border: 1px solid #e2e8f0; 
+  background: rgba(255,255,255,.9);
+  padding: .5rem .75rem; 
+  outline: none;
+  box-shadow: inset 0 0 0 0 rgba(124,58,237,0);
+  font-size: 16px; 
+}
+.input:focus { 
+  box-shadow: 0 0 0 3px rgba(124,58,237,.25); 
+}
+
+.label { 
+  font-size: .875rem; 
+  font-weight: 600; 
+  color: #475569; 
+}
+
+
+.form-safe, 
+.form-safe * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+.form-safe input[type="text"],
+.form-safe input[type="email"],
+.form-safe input[type="password"],
+.form-safe input[type="number"],
+.form-safe input[type="search"],
+.form-safe textarea,
+.form-safe select {
+  width: 100%;
+  min-width: 0;
+}
+
+
+.form-safe input[type="range"] {
+  width: 100%;
+  min-width: 0;
+}
+
+
+.form-safe button {
+  max-width: 100%;
+}
+
+
+.form-safe .chips,
+.form-safe .badges,
+.form-safe .pill-row,
+.form-safe .flex-wrap,
+.form-safe .row,
+.form-safe .chip-row,
+.form-safe .badge-row {
+  display: flex;
+  flex-wrap: wrap !important;
+  gap: .5rem;
+  min-width: 0;
+}
+
+
+.form-safe .flex { 
+  min-width: 0;
+  flex-wrap: wrap;
+}
+.form-safe .grid { 
+  min-width: 0; 
+}
+
+
+.form-safe * {
+  word-break: break-word;
+}
+
+
+.form-safe [style*="width:"],
+.form-safe [class*="w-["] {
+  max-width: 100%;
+}
+
+
+img, svg, canvas, video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 390px) {
+  .form-safe { 
+    padding: 12px; 
+  }
+}
