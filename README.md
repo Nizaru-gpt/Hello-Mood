@@ -34,10 +34,10 @@ npm install
 ```bash
 npm run dev
 ```
-Lalu buka [http://localhost:5173](http://localhost:5173)
+Lalu buka [http://localhost:5173](http://localhost:5173) atau sesuai dengan output yang muncul di terminal
 
 ## 🔑 Login
-- Anda bisa langsung **register/login** dengan Email & Password (tersimpan di Firebase Auth).
+- Anda bisa langsung **register/login** dengan Email & Password otomatis.
 - Atau gunakan **Masuk dengan Google**.
 - **Catatan:** Autentikasi hanya tambahan. **Semua data mood tetap disimpan di localStorage browser**, sesuai ketentuan tes.
 
